@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'tdd-assessement';
 
+  input: string = '';
+  result: number = 0;
+  error: string = '';
+
   ngOnInit(): void {}
+
+  calculate() {}
 }

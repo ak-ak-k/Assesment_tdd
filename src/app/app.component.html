@@ -1,8 +1,9 @@
 <div class="container">
   <h2>String Calculator</h2>
   <mat-form-field appearance="outline">
-    <input matInput placeholder="Enter Numbers">
+    <input matInput placeholder="Enter Numbers" [(ngModel)]="input">
   </mat-form-field>
-  <button mat-raised-button color="primary">Calculate</button>
-  <p>Result is </p>
+  <button mat-raised-button color="primary" class="calculate">Calculate</button>
+  <p>Result is {{result}}</p>
+  <p>{{error}}</p>
 </div>
